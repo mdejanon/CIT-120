@@ -4,13 +4,13 @@ Course Overview:
 
 Throughout this course you will break down programming problems using planning tools, flowcharting, and pseudocode. Then you will transform your design into a working solution using Python programming language. The key in this class is repetition and practice.
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 1:
 
 A customer in a store is purchasing four items. Design a program that asks for the price of each item, calculates the sales tax amount of the subtotal with a rate of 6%, and then displays the subtotal of the sale, the amount of sales tax, and the total.
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 2:
 
@@ -24,13 +24,13 @@ Over 10 pounds - $3.80
 
 Design a program that asks the user to enter the weight of a package and then displays the shipping charges.
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 3:
 
 Design a number guessing game program. The program should generate a random number and then ask the user to guess the number. Each time the user enters his or her guess, the program should indicate whether it was too high or too low. The game is over when the user correctly guesses the number. When the game ends, the program should display the number of guesses that the user made.
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 4:
 
@@ -46,7 +46,7 @@ A painting company has determined that for every 115 square feet of wall space, 
 
 •	The total cost of the paint job
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 5:
 
@@ -62,13 +62,13 @@ The program should display the following data:
 
 •	summation output
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 6:
 
 Design a payroll program that prompts the user to enter an employee’s hourly pay rate and the number of hours worked. Validate the user’s input so that only pay rates in the range of $7.50 through $18.25 and hours in the range of 0 through 40 are accepted. The program should display the employee’s gross pay.
 
-=========================================================================================================================================================
+===========================================================================
 
 Project 7:
 
