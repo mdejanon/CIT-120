@@ -1,0 +1,32 @@
+// Declare the necessary variables.
+Declare Real item1
+Declare Real item2
+Declare Real item3
+Declare Real item4
+Declare Real subTotal
+Declare Real salesTax
+Declare Real total
+
+// Get the price of four items.
+Display “Enter the price of the first item: ”
+Input item1
+Display “Enter the price of the second item: ”
+Input item2
+Display “Enter the price of the third item: ”
+Input item3
+Display “Enter the price of the fourth item: ”
+Input item4
+
+// Calculate the sub total by adding all the items.
+Set subTotal = item1 + item2 + item3 + item4
+
+// Calculate the sales tax at a rate of 6%.
+Set salesTax = subTotal * 0.06
+
+// Calculate the total.
+Set total = subTotal + salesTax
+
+// Display the sub total, sales tax, and total values.
+Display “The subtotal is :”, subtotal
+Display “The sales tax is :”, salesTax
+Display “The total is :”, total
