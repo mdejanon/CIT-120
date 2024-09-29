@@ -30,9 +30,13 @@ Project 4:
 A painting company has determined that for every 115 square feet of wall space, one gallon of paint and eight hours of labor will be required.  The company charged $20.00 per hour for labor.  Design a modular program that asks the user to enter the square feet of wall space to be painted and the price of the paint per gallon.  The program should display the following data:
 
 •	The number of gallons of paint required
+
 •	The hours of labor required
+
 •	The cost of the paint
+
 •	The labor charges
+
 •	The total cost of the paint job
 
 Project 5:
@@ -44,7 +48,9 @@ This program will compute the summation of the square of two numbers by followin
 The program should display the following data:
 
 •	the random numbers
+
 •	square of both numbers
+
 •	summation output
 
 Project 6:
