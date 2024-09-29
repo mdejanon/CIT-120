@@ -1,0 +1,27 @@
+// Declare variables
+
+Declare Real packageWeight
+Declare Real shippingCost
+
+// Ask user to enter the weight of the package
+
+Display “Enter the weight of the package: “
+Input packageWeight
+
+// Use the data the user entered to display the rate for the package weight
+
+If packageWeight > 0 AND <= 2 Then
+Set shippingCost = packageWeight * 1.10
+Display “The rate per pound is $1.10.  The shipping cost is:  “ , shippingCost
+Else If packageWeight > 2 AND packageWeight <= 6 Then
+Set shippingCost = packageWeight * 2.20
+Display “The rate per pound is $2.20. The shipping cost is:  “ , shippingCost
+Else If packageWeight > 6 AND packageWeight <= 10 Then
+Set shippingCost = packageWeight * 3.70
+Display “The rate per pound is $3.70. The shipping cost is: “ , shippingCost
+Else If packageWeight > 10 Then
+Set shippingCost = packageWeight * 3.80
+Display “The rate per pound is $3.80. The shipping cost is:  “ , shippingCost
+Else
+Display “Your package weight cannot be 0.“
+End If
