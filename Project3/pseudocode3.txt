@@ -1,0 +1,30 @@
+// Declare variables.
+Declare Integer answer
+Declare Integer user_Input
+Declare Integer counter
+
+// Set values.
+Set counter = 1 
+Set answer = random (1,100)
+
+// Display message for user and ask him to input his choice.
+Display “I am picking a number between 1 and 100.”
+Display “Guess the number I picked: “
+Input user_Input
+
+// Loop that keeps asking the user for a choice until it matches the answer.
+While user_Input != answer
+	If user_Input > answer Then
+Display “Your number is greater than my number.  Try again: “
+Set count = count + 1
+Input user_Input
+Else
+Display “Your number is smaller than my number.  Try again: “
+Set count = count + 1
+Input user_Input
+End If
+End While
+
+// Displayed when the user matches the answer and how many tries it took.
+Display “My number was ” , answer, “ and you picked “ , user_Input
+Display “It took you “ , counter, “ tries to guess my number.”
