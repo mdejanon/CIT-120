@@ -1,0 +1,58 @@
+// Global Real Variables.
+Declare Real wall_size
+Declare Real paint_cost_per_gallon
+
+// Global constants for hourly rate and standard wall size.
+Constant Integer HOURLY_RATE = 20
+Constant Integer STANDARD_WALL = 115
+
+// The Main Module
+Module main()
+	// Local Varaibles
+	Declare Real paint_quantity
+	Declare Real labor_time
+	
+	// Get wall size and paint cost from the user and
+	// store them in global varaibles.
+	Display "Enter the square footage of the wall: "
+	Input wall_size
+	Display "Enter the cost of the paint per gallon: "
+	Input paint_cost_per_gallon
+	
+	// Call the Calculation Modules
+	Call paint_quantity_calculator(paint_quantity)
+	Call labor_time_calculator(labor_time)
+	Call costs_calculator(paint_quantity, labor_time)
+End Module
+
+// Paint Quantity Module: This module calculates the
+// quanity of paint needed for the users wall size.
+Module paint_quantity_calculator(Real Ref gallons)
+	Set gallons = 1 * (wall_size / STANDARD_WALL)
+	Display "The number of gallons of paint required: ", gallons, " gallons."
+End Module
+
+// Labor Time Module: This module calculates the
+// labor time to complete the project.
+Module labor_time_calculator(Real Ref hours)
+	set hours = 8 * (wall_size / STANDARD_WALL)
+	Display "The hours of labor required: ", hours, " hrs."
+End Module
+
+// Costs Module: This module calculates the cost of the
+// paint needed to the wall and adds it to the labor cost
+// to get the total project cost.
+Module costs_calculator(Real gallons, Real Time)
+	Declare Real project_paint_cost
+	Declare Real labor_cost
+	Declare Real total_cost
+	
+	Set project_paint_cost = paint_cost_per_gallon * gallons
+	Display "The cost of the paint: $", project_paint_cost, "."
+
+	Set labor_cost = HOURLY_RATE * hours
+    	Display "The labor charges: $", labor_cost, "."
+
+	set total_cost = project_paint_cost + labor_cost
+	Display "The total cost of the paint job: $", total_cost, "."
+End Module	
